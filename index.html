@@ -50,7 +50,7 @@
   .brand span{ color:var(--blue); }
 
   .hero{ padding:80px 0 70px; }
-  .hero .wrap{ max-width:760px; }
+  .hero-text{ max-width:760px; }
   .hero h1{ margin:14px 0 20px; }
   .hero .lede{ font-size:1.1rem; margin-bottom:26px; }
   .price-strip{ display:inline-flex; align-items:center; gap:10px; background:#fff; border:1.5px solid var(--border); border-radius:999px; padding:8px 18px 8px 8px; margin-bottom:28px; font-size:0.9rem; font-weight:700; color:var(--blue-deep); }
@@ -85,7 +85,7 @@
   .mentor-grid{ display:grid; grid-template-columns:250px 1fr; gap:48px; align-items:start; }
   .mentor-photo{ width:100%; aspect-ratio:3/4; background:var(--bg-tint-coral); border-radius:20px; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--text-faint); font-size:0.85rem; padding:10px; font-weight:700; }
 
-  .photo-band{ width:100%; aspect-ratio:16/6; background:var(--bg-tint-blue); border-radius:24px; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--text-faint); font-size:0.9rem; font-weight:600; padding:10px; margin-top:32px; }
+  .photo-band{ width:100%; aspect-ratio:2.22/1; background:var(--bg-tint-blue); border-radius:24px; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--text-faint); font-size:0.9rem; font-weight:600; padding:10px; margin-top:32px; }
   .photo-inline{ width:100%; aspect-ratio:4/3; background:#F4F5F7; border-radius:20px; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--text-faint); font-size:0.85rem; font-weight:600; padding:10px; }
   .problema-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:44px; align-items:center; }
   @media (max-width:860px){ .problema-grid{ grid-template-columns:1fr; } }
@@ -151,7 +151,6 @@
   :focus-visible{ outline:2px solid var(--blue); outline-offset:3px; }
 
   @media (max-width:860px){
-    .hero .wrap{ grid-template-columns:1fr; }
     .mentor-grid{ grid-template-columns:1fr; }
     .mentor-photo{ max-width:220px; }
     .diff-grid, .whom-grid{ grid-template-columns:1fr; }
@@ -173,15 +172,15 @@
 
   <section class="hero">
     <div class="wrap">
-      <div>
+      <div class="hero-text">
         <h1>Habla inglés en tu día a día, con un plan claro y a tu propio ritmo.</h1>
         <span class="eyebrow" style="margin:14px 0 20px; display:inline-flex;">Inglés General · Conversacional · Nivelación A1 a B2</span>
         <p class="lede">Clases privadas uno a uno, basadas en tu nivel real — no en clases sueltas de vocabulario. Empiezas con un test gratuito y sigues un plan hecho a tu medida.</p>
         <div class="cta-row">
           <a class="btn-primary" href="https://masterdavidbasantes.github.io/English-Program/#placement-test-home" target="_blank" rel="noopener">Test de Ubicación Gratuito</a>
         </div>
-        <div class="photo-band"><img src="images/david-clase.png" alt="David Basantes dictando una clase de inglés" style="width:100%; height:100%; object-fit:cover; border-radius:24px;"></div>
       </div>
+      <div class="photo-band"><img src="images/david-clase.png" alt="David Basantes dictando una clase de inglés" style="width:100%; height:100%; object-fit:cover; border-radius:24px;"></div>
     </div>
   </section>
 
