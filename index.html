@@ -84,6 +84,11 @@
 
   .mentor-grid{ display:grid; grid-template-columns:250px 1fr; gap:48px; align-items:start; }
   .mentor-photo{ width:100%; aspect-ratio:3/4; background:var(--bg-tint-coral); border-radius:20px; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--text-faint); font-size:0.85rem; padding:10px; font-weight:700; }
+
+  .photo-band{ width:100%; aspect-ratio:16/6; background:var(--bg-tint-blue); border-radius:24px; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--text-faint); font-size:0.9rem; font-weight:600; padding:10px; margin-top:32px; }
+  .photo-inline{ width:100%; aspect-ratio:4/3; background:#F4F5F7; border-radius:20px; display:flex; align-items:center; justify-content:center; text-align:center; color:var(--text-faint); font-size:0.85rem; font-weight:600; padding:10px; }
+  .problema-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:44px; align-items:center; }
+  @media (max-width:860px){ .problema-grid{ grid-template-columns:1fr; } }
   .credentials{ list-style:none; display:grid; gap:10px; margin:20px 0 24px; }
   .credentials li{ font-size:0.94rem; color:var(--text-dim); padding-left:16px; border-left:3px solid var(--blue); }
   .quote{ background:var(--bg-tint-blue); border-radius:20px; padding:26px; }
@@ -175,24 +180,30 @@
         <div class="cta-row">
           <a class="btn-primary" href="https://masterdavidbasantes.github.io/English-Program/#placement-test-home" target="_blank" rel="noopener">Test de Ubicación Gratuito</a>
         </div>
+        <div class="photo-band"><img src="images/hero-confianza.jpg" alt="Estudiante practicando inglés con confianza" style="width:100%; height:100%; object-fit:cover; border-radius:24px;"></div>
       </div>
     </div>
   </section>
 
   <section class="tint-coral">
     <div class="wrap">
-      <div class="section-head">
-        <h2>¿Sientes que no avanzas, aunque llevas tiempo estudiando?</h2>
-        <p>Entiendes bastante cuando lees o escuchas. Pero hablar en el momento, o tener una conversación fluida, todavía te cuesta.</p>
+      <div class="problema-grid">
+        <div>
+          <div class="section-head" style="margin-bottom:0;">
+            <h2>¿Sientes que no avanzas, aunque llevas tiempo estudiando?</h2>
+            <p>Entiendes bastante cuando lees o escuchas. Pero hablar en el momento, o tener una conversación fluida, todavía te cuesta.</p>
+          </div>
+          <ul class="pain-list">
+            <li>Llevas años "estudiando inglés" de forma suelta, sin un plan claro</li>
+            <li>No sabes con certeza en qué nivel estás realmente</li>
+            <li>Entiendes al leer, pero te bloqueas al hablar</li>
+            <li>Empezaste cursos antes y los dejaste a medias</li>
+            <li>Quieres avanzar para viajar, trabajar o simplemente entender lo que ves y escuchas en inglés</li>
+          </ul>
+          <p class="pain-conclusion">No te falta disciplina. Te falta un plan claro y práctica real y constante.</p>
+        </div>
+        <div class="photo-inline"><img src="images/problema-bloqueo.jpg" alt="Estudiante bloqueado/a al intentar hablar en inglés" style="width:100%; height:100%; object-fit:cover; border-radius:20px;"></div>
       </div>
-      <ul class="pain-list">
-        <li>Llevas años "estudiando inglés" de forma suelta, sin un plan claro</li>
-        <li>No sabes con certeza en qué nivel estás realmente</li>
-        <li>Entiendes al leer, pero te bloqueas al hablar</li>
-        <li>Empezaste cursos antes y los dejaste a medias</li>
-        <li>Quieres avanzar para viajar, trabajar o simplemente entender lo que ves y escuchas en inglés</li>
-      </ul>
-      <p class="pain-conclusion">No te falta disciplina. Te falta un plan claro y práctica real y constante.</p>
     </div>
   </section>
 
